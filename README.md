@@ -1,4 +1,4 @@
-# MT4-Libraries
+# MT4 Libraries
 Metatrader libraries of mine, which I used almost in every algo.
 
 Both should be implemented by ```#include``` directive in your trading algorithm.
@@ -39,4 +39,14 @@ Both should be implemented by ```#include``` directive in your trading algorithm
 #### WriteTradeHistory()  
 - Function        : Saves a log of trades.
 - Purpose         : System evaluation. 
+#### ErrorCounter()
+- Function        : Counts errors.
+- Purpose         : System evaluation. 
+#### Listener_TP()
+- Function        : Tracks rolling price after opening an order.
+- Purpose         : Order efficiency evaluation.
+### Sum Library
+#### CalculateSummary(ExtInitialDeposit), WriteReport(), WriteToEADatabase("FileName.csv")    
+- Function        : Keeps trade logs.
+- Purpose         : Use CalculateInitialDeposit() for variable ExtInitialDeposit.
 
